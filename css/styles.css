@@ -634,62 +634,76 @@ img {
   background-color: var(--accent-color);
 }
 
-/*Page Portfolio*/
-.filters {
-  margin-bottom: 50px;
-}
 
 /*Footer form*/
-.footer-form{
-  outline: 1px solid red;
+.footer-form {
   margin-top: 12px;
   margin-left: 93px;
 }
 
-.footer-form-label{
-  display: flex;
-  flex-direction: column;
+.footer-form p{
+  margin: 0;
+  margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-color);
-  margin-bottom: 20px;
-  
+}
+
+.footer-form-thumb{
+  display: flex;
+  align-items: center;
+}
+.footer-form-email{
+  display: inline-block;
+  position: relative;
+  margin-right: 12px;
 }
 
 .footer-form-input{
   width: 358px;
-  background: #2F303A;
-  padding: 0;
-  border: 0;
+  padding: 16px 16px;
+  color: var(--secondary-color);
+  background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  padding: 15px 10px;
+  outline: transparent;
+}
+
+.footer-form-label{
+display: inline-block;
+position: absolute;
+top: 50%;
+left: 16px;
+transform: translateY(-50%);
+transition: transform var(--timing-function);
+font-size: 16px;
+line-height: calc(20 / 16); 
+color: var(--secondary-color); 
 }
 
 .footer-form-input::placeholder{
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 20px;
   display: flex;
   align-items: center;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-form-btn{
-  border: 0;
-  font-weight: 700;
   display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
+  cursor: pointer;
   color: var(--secondary-color);
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 13px 28px;
-  margin-left: 12px;
+  border: 0;
 }
 
 .icon-send{
@@ -698,6 +712,9 @@ img {
 }
 
 /*Page Portfolio*/
+.filters {
+  margin-bottom: 50px;
+}
 
 .filter-list {
   list-style-type: none;
