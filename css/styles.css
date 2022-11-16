@@ -262,7 +262,8 @@ img {
 
 .button-close {
   position: absolute;
-  padding: 9px;
+  display: flex;
+  padding: 6px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -276,6 +277,46 @@ img {
 .button-close:focus {
   fill: var(--accent-color);
 }
+
+/*Form*/
+.form{
+  outline: 1px solid blue;
+  margin: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--title-text-color);
+}
+
+.form-field{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.form-field-name{
+  margin-top: 12px;
+}
+
+.form-field-label{
+  margin-bottom: 4px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+
+
+.form-field-input{
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+
+
 
 /*Features*/
 
@@ -597,6 +638,66 @@ img {
 .filters {
   margin-bottom: 50px;
 }
+
+/*Footer form*/
+.footer-form{
+  outline: 1px solid red;
+  margin-top: 12px;
+  margin-left: 93px;
+}
+
+.footer-form-label{
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  
+}
+
+.footer-form-input{
+  width: 358px;
+  background: #2F303A;
+  padding: 0;
+  border: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 10px;
+}
+
+.footer-form-input::placeholder{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form-btn{
+  border: 0;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--secondary-color);
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 13px 28px;
+  margin-left: 12px;
+}
+
+.icon-send{
+  fill: var(--secondary-color);
+  margin-left: 10px;
+}
+
+/*Page Portfolio*/
 
 .filter-list {
   list-style-type: none;
