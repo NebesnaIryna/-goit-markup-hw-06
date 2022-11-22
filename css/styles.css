@@ -23,6 +23,10 @@ img {
   display: block;
 }
 
+p {
+  margin: 0;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -252,6 +256,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 40px;
 }
 
 .backdrop.is-hidden {
@@ -280,24 +285,19 @@ img {
 }
 
 /*Form*/
-.form{
-  outline: 1px solid blue;
-  margin: 40px;
-}
 
 .form p{
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   color: var(--title-text-color);
-  margin-bottom: 12px;
 }
 
 .form-field{
   display: flex;
   flex-direction: column;
-  margin: 10px 0;
   position: relative;
+  margin: 10px 0;
 }
 
 .form-field svg{
@@ -313,7 +313,7 @@ img {
 }
 
 .form-field-label{
-  margin-bottom: 4px;
+  padding-bottom: 4px;
   text-align: left;
   font-weight: 400;
   font-size: 12px;
@@ -342,15 +342,10 @@ img {
   fill: var(--accent-color);
 }
 
-.form-field-comment{
-  margin-bottom: 0;
-}
-
 .comment{
   resize: none;
   height: 120px;
   padding: 12px 16px;
-  margin-bottom: 20px;
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
@@ -361,10 +356,11 @@ img {
 
 .policy-checkbox{
   position: relative;
+  margin: 20px 0 30px 0;
   display: flex;
   align-items: center;
-  width: 425px;
-  margin: 0 auto 30px;
+  transform: translateX(30px);
+  transition: background-color var(--timing-function), border var(--timing-function);
 }
 
 .icon-check{
@@ -374,10 +370,12 @@ img {
   border-radius: 2px;
   border: 2px solid #212121;
   cursor: pointer;
+  background-color: transparent;
 }
 
-.policy-checkbox-svg{
-  transform: translateY(-25%);
+.icon-check svg{
+  position: fixed;
+  transform: translate(-50%, -50%);
 }
 
 .icon-check:hover,
@@ -390,7 +388,6 @@ img {
   font-weight: 400;
   line-height: calc(24 /14);
   color: var(--primary-text-color);
-  outline: 1px solid red;
   padding-left: 20px;
 }
 
@@ -645,6 +642,11 @@ img {
   padding-bottom: 60px;
 }
 
+.footer-navigation{
+display: flex;
+align-items: baseline;
+}
+
 .basement-logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -736,12 +738,10 @@ img {
 
 /*Footer form*/
 .footer-form {
-  margin-top: 12px;
   margin-left: auto;
 }
 
 .footer-form p{
-  margin: 0;
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.14;
@@ -753,17 +753,13 @@ img {
   display: flex;
   align-items: center;
 }
-.footer-form-email{
-  display: inline-block;
-  position: relative;
-  margin-right: 12px;
-}
 
 .footer-form-input{
   width: 358px;
   padding: 16px 16px;
   color: var(--secondary-color);
   background-color: inherit;
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -808,6 +804,7 @@ color: var(--secondary-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 13px 28px;
+  margin-left: 12px;
   border: 0;
   transition: background-color var(--timing-function);
 }
